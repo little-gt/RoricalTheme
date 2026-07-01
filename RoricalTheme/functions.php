@@ -188,7 +188,7 @@ function get_custom_gravatar($mail, $size = 40, $author = '', $class = 'rounded-
         $mail = 'default@example.com';
     }
     $size = max(1, min(2048, intval($size)));
-    $url = "https://cdn.sep.cc/avatar/" . md5(strtolower($mail));
+    $url = "https://weavatar.com/avatar/" . md5(strtolower($mail));
     $url .= "?s=" . $size;
     $author = themeTransfer($author, 'ATTR');
     $class = themeTransfer($class, 'ATTR');

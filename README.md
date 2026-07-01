@@ -4,7 +4,7 @@
 >
 > 一款为 Typecho 打造的现代化卡片式主题。基于 Argon 设计，并且重构了系统的功能函数以及运行逻辑，支持无插件依赖的阅读统计以及 Cookie 管理器。
 
-[![Rorical](https://img.shields.io/badge/版本-1.2.12-007EC6?style=for-the-badge)](https://github.com/little-gt/THEME-RoricalTheme/) [![License](https://img.shields.io/badge/许可证-GPLv3-blue?style=for-the-badge)](https://www.gnu.org/licenses/gpl-3.0.html) [![Argon](https://img.shields.io/badge/设计支持-Argon-orange?style=for-the-badge&logo=Argon)](https://demos.creative-tim.com/argon-design-system/)
+[![Rorical](https://img.shields.io/badge/版本-1.2.13-007EC6?style=for-the-badge)](https://github.com/little-gt/THEME-RoricalTheme/) [![License](https://img.shields.io/badge/许可证-GPLv3-blue?style=for-the-badge)](https://www.gnu.org/licenses/gpl-3.0.html) [![Argon](https://img.shields.io/badge/设计支持-Argon-orange?style=for-the-badge&logo=Argon)](https://demos.creative-tim.com/argon-design-system/)
 
 主题预览：
 
@@ -38,15 +38,8 @@
 
 ## 🚀 近期更新
 
-### 🛠️ 功能与性能优化
-- **PJAX 页面变量声明修复**：统一使用 `var page = X` 声明页面标识变量，避免 PJAX 局部刷新时出现 "Identifier 'page' has already been declared" 错误
-
-### ⚠️ 重要变更
-- **评论系统简化**：出于兼容性和稳定性考虑，移除了复杂的嵌套评论功能。现采用扁平化评论结构，所有评论按时间顺序显示。此调整：
-  - ✅ 提升了跨版本兼容性（Typecho 1.2.1-1.3.0）
-  - ✅ 减少了 PHP 版本依赖问题（PHP 7.4-8.3）
-  - ✅ 简化了代码维护，提高了稳定性
-  - ✅ 保留了回复功能，用户仍可使用 @ 提及进行互动
+### 🛠️ 头像加载源更新
+- **头像加载源更新**：将头像加载源从 Gravatar 更新为 Weavatar，以提高加载速度和稳定性。
 
 ---
 

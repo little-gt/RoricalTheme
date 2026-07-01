@@ -53,7 +53,7 @@ $this->comments()->to($comments);
                                     get_custom_gravatar($comments->mail, 40, $comments->author);
                                 } else {
                                     // 降级方案：使用默认 Gravatar
-                                    $gravatarUrl = 'https://cdn.sep.cc/avatar/' . md5(strtolower($comments->mail)) . '?s=40';
+                                    $gravatarUrl = 'https://weavatar.com/avatar/' . md5(strtolower($comments->mail)) . '?s=40';
                                     echo '<img src="' . themeTransfer($gravatarUrl, 'URL') . '" class="rounded-circle" alt="' . themeTransfer($comments->author, 'ATTR') . '" width="40" height="40">';
                                 }
                                 ?>
@@ -307,7 +307,7 @@ $showCommentForm = $this->user->hasLogin() || $allowGuestComment;
 
     // 当邮箱输入框失去焦点时，更新头像显示
     $("#mail").on('blur', function () {
-        var url = "https://cdn.sep.cc/avatar/" + hex_md5($(this).val()) + "?s=40&d=";
+        var url = "https://weavatar.com/avatar/" + hex_md5($(this).val()) + "?s=40&d=";
         $("#author-head").css('background-image', 'url(' + url + ')');
     });
 
