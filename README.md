@@ -8,11 +8,11 @@
 
 主题预览：
 
-![预览1](screenshot/图片1.jpg)
+![预览1](https://cnb.cool/little-gt/RoricalTheme/-/git/raw/main/screenshot/%E5%9B%BE%E7%89%871.jpg)
 
-![预览2](screenshot/图片2.jpg)
+![预览2](https://cnb.cool/little-gt/RoricalTheme/-/git/raw/main/screenshot/%E5%9B%BE%E7%89%872.jpg)
 
-![预览3](screenshot/图片3.jpg)
+![预览3](https://cnb.cool/little-gt/RoricalTheme/-/git/raw/main/screenshot/%E5%9B%BE%E7%89%873.jpg)
 
 参与讨论：
 
