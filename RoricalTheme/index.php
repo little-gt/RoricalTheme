@@ -5,7 +5,7 @@
  * @package Rorical Theme
  * @author Rorical & little-gt
  * @version 1.2.13
- * @link https://blog.garfieldtom.cool/
+ * @link https://www.garfieldtom.cool/
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 $this->need('header.php');
