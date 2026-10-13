@@ -29,7 +29,7 @@
 | **兼容优化** | 完全支持 Typecho 1.2.1-1.3.0 / PHP 7.4-8.3 / MySQL 8.X-9.X |
 | **高度自定义** | 独立页面图标与配色、自定义导航栏样式、双端背景、LOGO 设置 |
 | **现代化设计** | 基于 Argon Design System 与 Bootstrap 4，响应式支持多端展示 |
-| **归属地展示** | 评论区 IP 归属展示（依赖 [XQLocation](https://www.toubiec.cn/1194.html)） |
+| **归属地展示** | 评论区 IP 归属展示（依赖 [IPLocation](https://cnb.cool/little-gt/IPLocation)） |
 | **Cookie合规** | 支持 GDPR/最新2026年执行的中国网络安全规范的 Cookie 同意模式 |
 | **评论管理** | 扁平化评论结构、回复提及功能、未登录用户权限控制 |
 | **隐私政策** | 支持自定义隐私政策页面 URL |
