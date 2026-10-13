@@ -25,10 +25,11 @@ $this->comments()->to($comments);
 
     <!-- 插件状态提示（仅管理员可见） -->
     <?php if ($this->user->hasLogin() && $this->user->pass('administrator', true)): ?>
-        <?php if (!class_exists('XQLocation_Plugin')): ?>
+        <?php if (class_exists('\Typecho\Plugin') && \Typecho\Plugin::exists('IPLocation')): ?>
+        <?php elseif; ?>
             <div class="alert alert-warning" role="alert">
                 <strong>未安装 IP 归属地显示插件</strong><br>
-                评论区的 IP 归属地功能需要安装 <a href="https://www.toubiec.cn/1194.html" target="_blank">XQLocation 插件</a>。当前提示，仅您可见。
+                评论区的 IP 归属地功能需要安装 <a href="https://cnb.cool/little-gt/IPLocation" target="_blank">IPLocation 插件</a>。当前提示，仅您可见。
             </div>
         <?php endif; ?>
     <?php endif; ?>
@@ -65,13 +66,13 @@ $this->comments()->to($comments);
                                 <span class="badge badge-info mr-2 mb-1">
                                     <i class="fa fa-globe" aria-hidden="true"></i>
                                     <span class="ml-1">
-                                        <?php
-                                            if (class_exists('XQLocation_Plugin') && method_exists('XQLocation_Plugin', 'render')) {
-                                                XQLocation_Plugin::render($comments->ip);
-                                            } else {
-                                                echo '未知';
-                                            }
-                                        ?>
+                                    <?php
+                                        if (class_exists('\Typecho\Plugin') && \Typecho\Plugin::exists('IPLocation')) {
+                                            \TypechoPlugin\IPLocation\Plugin::render($comments->ip);
+                                        } else {
+                                            echo '尚未进行配置';
+                                        }
+                                    ?>
                                     </span>
                                 </span>
                                 <span class="badge badge-success mr-2 mb-1">

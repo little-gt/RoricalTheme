@@ -10,7 +10,7 @@
 
 | Version | Status |
 | :------ | :----- |
-| **1.2.13**          | ✅ Latest           |
+| **1.3.0**          | ✅ Latest           |
 | **大于等于 1.2.12**   | ✅ Supported        |
 | **低于版本 1.2.12**   | ❌ Out of Scope     |
 
